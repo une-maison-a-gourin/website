@@ -1,6 +1,6 @@
-# Brunch + Babel/ES6
+# A House in Gourin Website [![Build Status](https://travis-ci.org/une-maison-a-gourin/website.svg?branch=master)](https://travis-ci.org/une-maison-a-gourin/website)
 
-This is a modern JS skeleton for [Brunch](http://brunch.io).
+Using the modern JS skeleton for [Brunch](http://brunch.io) to create a simple static web site for the moment.
 
 ## Installation
 
