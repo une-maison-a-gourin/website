@@ -1,0 +1,9 @@
+language: node_js
+sudo: enabled
+node_js:
+  - "iojs"
+  - "8"
+install:
+  - npm install -g brunch
+  - npm install
+script: brunch build
