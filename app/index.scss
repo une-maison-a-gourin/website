@@ -1,0 +1,12 @@
+// Import Bootstrap config first
+@import './scss/bootstrap/config';
+
+// Import all font awesome here
+@import './scss/font_awesome/config';
+
+// Import all theme here
+@import './scss/theme/creative';
+
+// here go's the rest
+@import './scss/brunch-start-style';
+
