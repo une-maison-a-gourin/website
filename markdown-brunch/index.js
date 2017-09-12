@@ -29,7 +29,7 @@ class MarkdownCompiler {
 
 MarkdownCompiler.prototype.brunchPlugin = true;
 MarkdownCompiler.prototype.type = 'template';
-MarkdownCompiler.prototype.extension = /\.(markdown|md)$/;
+MarkdownCompiler.prototype.extension = 'md';
 MarkdownCompiler.prototype.staticTargetExtension = 'html';
 
 module.exports = MarkdownCompiler;

@@ -1,4 +1,3 @@
-// See http://brunch.io for documentation.
 exports.files = {
   javascripts: {
     joinTo: {
@@ -12,6 +11,9 @@ exports.files = {
     order: {
       after: [ "css/app.css" ]
     }
+  },
+  templates: {
+    '*.html': /^app\/assets\/pages\/*\.md/
   }
 };
 
@@ -30,6 +32,8 @@ exports.plugins = {
       precision: 8
     }
   },
+  "markdown-brunch": {
+  },
   copycat: {
     "fonts": [
       "./node_modules/font-awesome/fonts",
@@ -39,6 +43,11 @@ exports.plugins = {
     ],
     verbose: true,
     onlyChanged: true
+  },
+  static: {
+      processors: [
+        "markdown-brunch"
+      ]
   }
 };
 
