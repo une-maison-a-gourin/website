@@ -22,8 +22,8 @@ describe('Plugin', () => {
     const content = '# This is a title';
     var expected = "<h1>This is a title</h1>\n";
 
-    return plugin.compileStatic({data: content, path: ''}).then(got => {
-      expect(got).to.equal(expected);
+    return plugin.compileStatic({data: content, path: './app/assets/pages/test.hbs'}).then(got => {
+      expect(eval(got)).to.equal(expected);
     }, error => expect("Got " + got + " " + error).not.to.be.ok);
   });
 
