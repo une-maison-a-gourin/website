@@ -20,6 +20,9 @@ class BundlebarsCompiler {
       partialsExt: '.html',
       helpersDir: './app/assets/pages/helpers',
       templatesDir: './app/assets/pages/templates',
+      compilerOptions: {
+        noEscape: true,
+      },
     };
     this.bundlebars = new Bundlebars(this.config);
   }
@@ -47,7 +50,8 @@ class BundlebarsCompiler {
     var dataContent = fm(params.data);
     var content;
     var me = this;
-    var body = me.compileBundle(this.toStream(dataContent.body), dataContent.attributes);
+    var htmlContent = md.render(dataContent.body).replace(/{{inc/g, '{{>');
+    var body = me.compileBundle(this.toStream(htmlContent), dataContent.attributes);
     if (dataContent.attributes.template) {
       var file = path.join(this.config.templatesDir, dataContent.attributes.template);
       content = body.then(function(data) {
@@ -62,7 +66,7 @@ class BundlebarsCompiler {
         if (compiled === '') {
           reject('Empty data');
         } else {
-          resolve(md.render(compiled));
+          resolve(compiled);
         }
       });
     }, this.onError);

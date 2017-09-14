@@ -20,6 +20,7 @@ nav:
     -
       title: "About"
       href: "about.html"
+      isActive: true
 ---
 
 # {{title}} 
@@ -30,6 +31,6 @@ And this is the body of the content with the description of
 
 inserted by bundlebars and also a partial of 
 
-{{> apart}}
+{{inc apart}}
 
 inserted.
