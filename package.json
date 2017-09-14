@@ -6,13 +6,10 @@
   "version": "0.0.1",
   "repository": "",
   "scripts": {
-    "preinstall": "npm install ./markdown-brunch",
     "start": "brunch watch --server",
     "build": "brunch build --production"
   },
-  "dependencies": {
-    "markdown-brunch": "file:markdown-brunch"
-  },
+  "dependencies": {},
   "devDependencies": {
     "auto-reload-brunch": "^2",
     "autoprefixer": "^6.4.0",
@@ -20,6 +17,7 @@
     "babel-preset-latest": "^6",
     "bootstrap": "4.0.0-alpha.6",
     "brunch": "^2",
+    "bundlebars-brunch": "git+https://github.com/une-maison-a-gourin/brunch-jekyllish-plugin.git",
     "clean-css-brunch": "^2",
     "copycat-brunch": "^1.1.0",
     "font-awesome": "^4.7.0",
