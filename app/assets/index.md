@@ -39,6 +39,6 @@ And this is the body of the content with the description of
 
 inserted by bundlebars and also a partial of 
 
-{{inc extracontent}}
+{{include extracontent}}
 
 inserted.

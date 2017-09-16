@@ -5,17 +5,19 @@ exports.files = {
       'js/app.js': /^app/
     }
   },
-  stylesheets: { joinTo: {
+  stylesheets: {
+    joinTo: {
       'css/app.css': /^app/
     },
     order: {
       after: [ "css/app.css" ]
     }
   },
-  templates: {
-    '*.html': /^app\/assets\/pages\/*\.md/
-  }
 };
+
+//exports.conventions = {
+//  ignored: /^app\/(helpers|partials|templates)/,
+//};
 
 exports.plugins = {
   babel: {
@@ -32,7 +34,12 @@ exports.plugins = {
       precision: 8
     }
   },
-  "markdown-brunch": {
+  jekyllish: {
+    partialsDir: './app/partials',
+    partialsExt: '.html',
+    templatesDir: './app/templates',
+    helpersDir: './app/helpers',
+    compilerOptions: { noEscape: true }
   },
   copycat: {
     "fonts": [
@@ -45,9 +52,7 @@ exports.plugins = {
     onlyChanged: true
   },
   static: {
-      processors: [
-        "markdown-brunch"
-      ]
+    processors: [ 'jekyllish' ],
   }
 };
 

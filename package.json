@@ -17,7 +17,7 @@
     "babel-preset-latest": "^6",
     "bootstrap": "4.0.0-alpha.6",
     "brunch": "^2",
-    "bundlebars-brunch": "git+https://github.com/une-maison-a-gourin/brunch-jekyllish-plugin.git",
+    "jekyllish-brunch": "git+https://github.com/une-maison-a-gourin/brunch-jekyllish-plugin.git",
     "clean-css-brunch": "^2",
     "copycat-brunch": "^1.1.0",
     "font-awesome": "^4.7.0",
