@@ -15,9 +15,10 @@ exports.files = {
   },
 };
 
-//exports.conventions = {
-//  ignored: /^app\/(helpers|partials|templates)/,
-//};
+exports.paths = {
+  public: 'public',
+  watched: ['app', 'app/assets', 'app/partials', 'app/helpers', 'app/templates'],
+}
 
 exports.plugins = {
   babel: {

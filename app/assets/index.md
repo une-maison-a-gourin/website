@@ -27,6 +27,8 @@ sections:
       name: services
     - 
       name: portfolio
+    -
+      name: extra
 footer:
   companyName: "Copyleft"
 ---
