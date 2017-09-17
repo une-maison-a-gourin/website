@@ -3,6 +3,19 @@
   color: $theme-primary !important;
 }
 
+.bg-secondary {
+	color: white;
+  background: $theme-secondary !important;
+}
+
+.bg-secondary .text-primary,
+.bg-secondary .success,
+.bg-secondary .service-box i,
+.bg-secondary .service-box .text-muted {
+  color: #c2b7b3 !important;
+  border-color: #b89c89 !important;
+}
+
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;

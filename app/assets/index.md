@@ -1,13 +1,13 @@
 ---
 template: landing.html
 site:
-    title: Start Bootstrap Theme
+    title: Start Bootstrap
 head:
-    title: Hi
+    title: Now available as a Brunch project 
     description: This is the description
     author: This is the author
 masthead:
-    title: Just hack'n
+    title: YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES 
 nav:
   items:
     -
@@ -22,7 +22,12 @@ nav:
     -
       title: "Contact"
       href: "#contact"
+    -
+      title: "Extra"
+      href: "#extra"
 sections:
+    -
+      name: about
     - 
       name: services
     - 
@@ -33,14 +38,8 @@ footer:
   companyName: "Copyleft"
 ---
 
-# {{head.title}} 
+## {{head.title}} 
 
-And this is the body of the content with the description of 
-
-{{head.description}} 
-
-inserted by bundlebars and also a partial of 
+Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
 
 {{include extracontent}}
-
-inserted.
