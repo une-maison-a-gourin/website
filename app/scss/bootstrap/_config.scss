@@ -8,12 +8,12 @@
 // state in July 2017
 
 
+@import "functions";
 // @import "custom";
 @import "variables";
 @import "mixins";
 
-
-@import "print";
+//@import "print";
 
 // Core CSS
 
@@ -44,7 +44,6 @@
 //@import "progress";
 @import "media";
 @import "list-group";
-@import "responsive-embed";
 @import "close";
 
 // Components w/ JavaScript

@@ -1,7 +1,7 @@
 ---
 template: landing.html
 site:
-    title: Creative - Start Bootstrap Theme
+    title: Start Bootstrap Theme
 head:
     title: Hi
     description: This is the description

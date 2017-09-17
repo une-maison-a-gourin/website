@@ -7,10 +7,10 @@ exports.files = {
   },
   stylesheets: {
     joinTo: {
-      'css/app.css': /^app/
+      'css/vendor.css': /^app\/vendor\.scss/,
+      'css/app.css': /^app\/index\.scss/,
     },
     order: {
-      after: [ "css/app.css" ]
     }
   },
 };
