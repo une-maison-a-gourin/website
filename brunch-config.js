@@ -1,4 +1,3 @@
-// See http://brunch.io for documentation.
 exports.files = {
   javascripts: {
     joinTo: {
@@ -6,14 +5,20 @@ exports.files = {
       'js/app.js': /^app/
     }
   },
-  stylesheets: { joinTo: {
-      'css/app.css': /^app/
+  stylesheets: {
+    joinTo: {
+      'css/vendor.css': /^app\/vendor\.scss/,
+      'css/app.css': /^app\/index\.scss/,
     },
     order: {
-      after: [ "css/app.css" ]
     }
-  }
+  },
 };
+
+exports.paths = {
+  public: 'public',
+  watched: ['app', 'app/assets', 'app/partials', 'app/helpers', 'app/templates'],
+}
 
 exports.plugins = {
   babel: {
@@ -30,6 +35,13 @@ exports.plugins = {
       precision: 8
     }
   },
+  jekyllish: {
+    partialsDir: './app/partials',
+    partialsExt: '.html',
+    templatesDir: './app/templates',
+    helpersDir: './app/helpers',
+    compilerOptions: { noEscape: true }
+  },
   copycat: {
     "fonts": [
       "./node_modules/font-awesome/fonts",
@@ -39,6 +51,9 @@ exports.plugins = {
     ],
     verbose: true,
     onlyChanged: true
+  },
+  static: {
+    processors: [ 'jekyllish' ],
   }
 };
 

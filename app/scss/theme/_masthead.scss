@@ -5,15 +5,16 @@ header.masthead {
   min-height: auto;
   text-align: center;
   color: white;
-  background-image: url('../img/Photos/aaaafrontwithroses.jpg');
+  background-image: url('../img/house.jpg');
   background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
   @include background-cover;
   .header-content {
     position: relative;
     width: 100%;
     padding: 150px 15px 100px;
     text-align: center;
-    background-color: fade-out(black, .8);
+    //background-color: fade-out(black, .8);
     .header-content-inner {
       h1 {
         font-size: 30px;
