@@ -34,6 +34,8 @@ sections:
       name: photos
     -
       name: extra
+    - 
+      name: map
 footer:
   companyName: "Leanne Northrop"
 ---

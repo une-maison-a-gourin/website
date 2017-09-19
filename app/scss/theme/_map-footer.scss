@@ -1,0 +1,36 @@
+/* Map */
+
+.map {
+  height: 500px;
+}
+
+@media(max-width:768px) {
+  .map {
+    height: 75%;
+  }
+}
+
+.map iframe {
+  pointer-events: none;
+  height: 500px;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 100px 0;
+}
+
+#to-top {
+  font-size: 1em;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  display: none;
+  padding: 15px 20px;
+}
+
+#map {
+  padding: 0px;
+}
