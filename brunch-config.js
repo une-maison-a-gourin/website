@@ -65,6 +65,7 @@ exports.npm = {
     Tether: 'tether',
     ScrollReveal: 'scrollreveal',
     MagnificPopup: 'magnific-popup',
-    bootstrap: 'bootstrap'
+    Popper: 'popper.js',
+    bootstrap: 'bootstrap',
   }
 }

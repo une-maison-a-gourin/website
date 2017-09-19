@@ -1,13 +1,13 @@
 ---
 template: landing.html
 site:
-    title: Maison a Gourin, France 
+    title: Une Maison a Gourin, France 
 head:
-    title: Now available as a Brunch project 
-    description: This is the description
-    author: This is the author
+    title: A Beautiful Holiday Home for Sale
+    description: A Beautiful Holiday Home for sale in the heart of Brittany, France. 
+    author: Leanne Northrop
 masthead:
-    title: YOUR FAVORITE SOURCE OF FREE BOOTSTRAP THEMES 
+    title: Love France? Love Painting, Meditation, or Outdoor Activies? 
 nav:
   items:
     -
@@ -17,8 +17,8 @@ nav:
       title: "Comments"
       href: "#comments"
     -
-      title: "Portfolio"
-      href: "#portfolio"
+      title: "Photos"
+      href: "#photos"
     -
       title: "Contact"
       href: "#contact"
@@ -31,11 +31,11 @@ sections:
     - 
       name: comments
     - 
-      name: portfolio
+      name: photos
     -
       name: extra
 footer:
-  companyName: "Copyleft"
+  companyName: "Leanne Northrop"
 ---
 
 ## {{head.title}} 
