@@ -8,6 +8,9 @@ header.masthead {
   background-image: url('../img/house.jpg');
   background-position: center;
   @include background-cover;
+  .header-content-inner {
+    padding: 5em 0;
+  }
   .header-content {
     position: relative;
     width: 100%;
@@ -28,7 +31,7 @@ header.masthead {
         font-size: 16px;
         font-weight: 300;
         margin-bottom: 50px;
-        color: fade-out(white, .3);
+        color: fade-out(white, .1);
       }
     }
   }

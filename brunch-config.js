@@ -69,3 +69,9 @@ exports.npm = {
     bootstrap: 'bootstrap',
   }
 }
+
+exports.hooks= {
+    onCompile(generatedFiles, changedAssets) {
+      console.log(generatedFiles.map(f => f.path));
+    }
+  }

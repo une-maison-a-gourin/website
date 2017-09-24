@@ -20,6 +20,12 @@
 
 footer {
   padding: 100px 0;
+  background: $indigo;
+  color: white;
+}
+
+footer a {
+  color: $yellow;
 }
 
 #to-top {

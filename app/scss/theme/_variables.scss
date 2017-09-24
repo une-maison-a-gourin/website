@@ -4,6 +4,17 @@
 
 $theme-primary: #F05F40;
 
+$blue:    #007bff !default;
+$indigo:  #262271 !default;
+$purple:  #2B0B25 !default;
+$pink:    #942881 !default;
+$red:     #B90E00 !default;
+$orange:  #DC4104 !default;
+$yellow:  #E59821 !default;
+$green:   #637413 !default;
+$teal:    #426F74 !default;
+$cyan:    #70BAC4 !default;
+
 $gray-base: #000 !default;
 $gray-darker: lighten($gray-base, 13.5%) !default;
 $gray-dark: lighten($gray-base, 20%) !default;

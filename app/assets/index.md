@@ -3,11 +3,11 @@ template: landing.html
 site:
     title: Une Maison a Gourin, France 
 head:
-    title: A Beautiful Holiday Home for Sale
+    title: This Beautiful Holiday Home Is for Sale
     description: A Beautiful Holiday Home for sale in the heart of Brittany, France. 
-    author: Leanne Northrop
+    author: L Northrop
 masthead:
-    title: Love France? Love Painting, Meditation, or Outdoor Activies? 
+    title: France, Painting, Meditation, Outdoor Activies? 
 nav:
   items:
     -
@@ -20,28 +20,26 @@ nav:
       title: "Photos"
       href: "#photos"
     -
+      title: "Details"
+      href: "#call-to-action"
+    -
       title: "Contact"
       href: "#contact"
-    -
-      title: "Extra"
-      href: "#extra"
 sections:
     -
       name: about
     - 
       name: comments
     - 
+      name: callToAction
+    - 
       name: photos
-    -
-      name: extra
     - 
       name: map
 footer:
   companyName: "Leanne Northrop"
 ---
 
-## {{head.title}} 
-
-Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!
+This beautiful house set in the heart of Brittany, is ideally located for exploring the rugged coasts of this extraordinary country with private bay beaches, historic villages, and many of the famous locations of impressionist en plein paintings. A perfect location for taking long rambles or bike tours of the region or trundle down to Spain on the Camino de Santiago.
 
 {{include extracontent}}

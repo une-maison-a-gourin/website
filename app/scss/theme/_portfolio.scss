@@ -3,6 +3,7 @@
   position: relative;
   display: block;
   max-width: 650px;
+  max-height: 320px;
   margin: 0 auto;
   .portfolio-box-caption {
     position: absolute;
@@ -13,7 +14,7 @@
     text-align: center;
     opacity: 0;
     color: white;
-    background: fade-out($theme-primary, .1);
+    background: fade-out($yellow, .1);
     @include transition-all;
     .portfolio-box-caption-content {
       position: absolute;
