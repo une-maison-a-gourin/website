@@ -1,26 +1,21 @@
 language: node_js
-
 sudo: enabled
-
 services:
-  - docker
-
+- docker
 node_js:
-  - "8"
-
-before_install:
-  - docker pull lavenderflowerdew/alpine-base
-
+- '8'
 install:
-  - npm install -g brunch
-  - npm install
-
+- npm install -g brunch
+- npm install
 script: brunch build
+deploy:
+  provider: s3
+  access_key_id: AKIAISJH47MFGNTE42MQ
+  secret_access_key:
+    secure: 0Zz+Evvf58JgzCyf2ILvy/fuDZsblBmFasrULV9rvKvHrlXI0wxsTNzz/WmDFc6rZban/fhAHp/EE4Ho/7hxIalrcRGeMIMV5lHv4vnIUiEP2TiTDSoJfhbEO/q7R+BKTJJ2otJvgayr7YumEoLDVznEkk0rWU0GOr0iTxeacE7/mGhIuwnRwqCT0vm5+Bb9OGPrnIVnFGOL4LjAmFzY8luanyqaafbB14n5HIVCdoE7ANplD452NmeI+6z30VnmxQcB1aDFZXZVl9Dzs9PQ2DbEuU3w/X1eXUQK7yx5PxcoTjsqLpT4HITjMViU6hqxYR8VM7UhrY+f0RuRwZ/DPU+YHemYFku1Wm64ME4fJkERfx8iQxN5L3c+I0qssABzeKbBPyjyHlZbTSuln5crMX/xP7Qoli4mmIrJpBzFY4wTOQFoWSHv/7tji5j3K2SDx19ZwVqfvihfO2bISkd6C2bSG/eh710RYI6MRHIzWJzc0sXd2RymCAfShNeYAJpiqeR7yMjMT86sp93Vk5IYBOW5ZN/cFUusnPPBN/g1wiZXxMbCXZ/jgIcEii79hm+40xk/ZhD18dLOdFd6jpPT/xz56QmXLZ4oZUcK5b3DnLbmx0BKAELIsK1EiEvdVQXHu80njR7e+l4S3BvvHtpHb+L5np9gbbta8IbLQ3+zwZg=
+  bucket: "une.maison.a.gourin"
+  skip_cleanup: true
+  local_dir: public
+  on:
+    branch: master
 
-after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker build -t "$DOCKER_USERNAME/$DOCKER_REPO" .;
-    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
-    docker push "$DOCKER_USERNAME/$DOCKER_REPO";
-    ./deploy.sh;
-    fi
