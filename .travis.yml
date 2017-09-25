@@ -16,7 +16,7 @@ deploy:
   access_key_id: AKIAISJH47MFGNTE42MQ
   secret_access_key:
     secure: 0Zz+Evvf58JgzCyf2ILvy/fuDZsblBmFasrULV9rvKvHrlXI0wxsTNzz/WmDFc6rZban/fhAHp/EE4Ho/7hxIalrcRGeMIMV5lHv4vnIUiEP2TiTDSoJfhbEO/q7R+BKTJJ2otJvgayr7YumEoLDVznEkk0rWU0GOr0iTxeacE7/mGhIuwnRwqCT0vm5+Bb9OGPrnIVnFGOL4LjAmFzY8luanyqaafbB14n5HIVCdoE7ANplD452NmeI+6z30VnmxQcB1aDFZXZVl9Dzs9PQ2DbEuU3w/X1eXUQK7yx5PxcoTjsqLpT4HITjMViU6hqxYR8VM7UhrY+f0RuRwZ/DPU+YHemYFku1Wm64ME4fJkERfx8iQxN5L3c+I0qssABzeKbBPyjyHlZbTSuln5crMX/xP7Qoli4mmIrJpBzFY4wTOQFoWSHv/7tji5j3K2SDx19ZwVqfvihfO2bISkd6C2bSG/eh710RYI6MRHIzWJzc0sXd2RymCAfShNeYAJpiqeR7yMjMT86sp93Vk5IYBOW5ZN/cFUusnPPBN/g1wiZXxMbCXZ/jgIcEii79hm+40xk/ZhD18dLOdFd6jpPT/xz56QmXLZ4oZUcK5b3DnLbmx0BKAELIsK1EiEvdVQXHu80njR7e+l4S3BvvHtpHb+L5np9gbbta8IbLQ3+zwZg=
-  bucket: "http://une.maison.a.gourin.s3-website.eu-west-2.amazonaws.com"
+  bucket: "une.maison.a.gourin.s3-website.eu-west-2.amazonaws.com"
   skip_cleanup: true
   local_dir: public
   on:
